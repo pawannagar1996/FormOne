@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color :#e94a47;
+    --secondary-color:#428dfc;
+    --primaryDark:#c53433;
+    --secondaryDark:#1e2362;
+    --white : #ffffff;
+    --text-font : #5b5b5b;
+    --heading:#3d3d3d;
+    --border-form:#e1e1e1;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--heading);
+}
+h2 {
+    color: var(--heading);
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--text-font);
+}
+
+body{
+    width: 100%;
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--primary-color) 50%,var(--primaryDark) 50%);
+    padding:40px;
+
+}
+
+main{
+    width: 100%;
+    max-width: 118rem;
+    margin: auto;
+    display: flex;
+    border-radius: 1rem;
+}
+.firstDiv{
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 5rem;
+}
+.firstDiv h2{
+    font-size: 3rem;
+}
+.firstDiv p{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.firstDiv button{
+    border: 0px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ margin-top: 2rem;
+ border-radius: 0.3rem;
+ }
+ .firstDiv button .buttonDesign1{
+width: 7%;
+display: inline-block;
+background-color: var(--white);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0.3rem;
+border: 0.1rem solid var(--secondary-color);
+align-self: center;
+
+
+ }
+ .firstDiv button .buttonDesign2{
+    width: 93%;
+    display: inline-block;
+    align-self: center;
+    color: var(--white);
+    
+  
+    
+     }
+.firstDiv button img{
+width: 100%;
+border-radius: 0.3rem;
+}
+.firstDiv .paraAftBfr{
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1.4rem;
+    width: 100%;
+    margin-top: 2rem;
+ 
+}
+.paraAftBfr::after{
+content: "";
+display: inline-block;
+width:calc(50% - 20px);
+height: 0.1rem;
+background-color: #111111;
+align-self: center;
+
+
+}
+.paraAftBfr::before{
+    content: "";
+    display: inline-block;
+    width:calc(50% - 20px);
+    height: 0.1rem;
+    background-color: #111111;
+    align-self: center;
+  
+    }
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+form label{
+    font-size: 1.4rem;
+    color: var(--text-font);
+    font-weight: 600;
+}
+form label:nth-last-of-type(2){
+  margin-top: 2rem;
+}
+form label:nth-last-of-type(1){
+    margin-top: 2rem;
+  }
+form input{
+    font-size: 1.4rem;
+    color: var(--text-font);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: var(--border-form) solid 0.1rem; 
+    margin-top: 1rem;
+}
+form input::placeholder{
+    font-size: 1.4rem;
+    color: var(--border-form);
+}
+form input:focus{
+    outline: none;
+    border:0.1rem solid var(--secondary-color);  
+    
+   
+}
+
+form .checkbox {
+    display: flex;
+    margin-top: 2rem;
+    
+}
+form .checkbox input{
+   align-self:flex-start;
+   margin-right:1rem;
+   margin-top: 0.5rem;
+}
+form .checkbox p{
+    margin-top: 0rem;
+ }
+ form .checkbox p a{
+    text-decoration: none;
+    color: var(--secondary-color);
+ }
+ form .checkbox p a:hover{
+    text-decoration:underline;
+ }
+
+ form .submit{ height: auto;
+    display: flex;
+
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 3rem;
+   
+ }
+
+ form .submit input[type=submit]{
+    margin-top: 0rem;
+    background-color: var(--secondaryDark);
+    color: var(--white);
+    border-radius: 1rem;
+    border:0px;
+    padding: 1rem 7rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 2rem;
+    align-self: center;
+    transition: all 0.5s;
+ }
+ form .submit input[type=submit]:hover{
+    background-color: var(--secondary-color);
+ }
+ form .submit p{
+
+    margin-top: 0rem;
+    align-self: center;
+ }
+ form .submit p a{ 
+
+   color: var(--secondary-color);
+   text-decoration: none;
+ }
+
+
+ .secondDiv{width: 50%;
+    background-color: #eff5ff;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.secondDiv img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+
+@media only screen and (max-width: 992px){
+
+    body{
+       height: auto;
+    }
+
+    .firstDiv button .buttonDesign1{
+        width: 10%;
+        
+         }
+         .firstDiv button .buttonDesign2{
+            width: 90%;
+           
+             }
+
+             form .submit{ 
+                flex-direction: column;
+                align-items:start;
+               
+             }
+            
+             form .submit input[type=submit]{
+                align-self:start;
+               
+             }
+             form .submit p{
+            
+                margin-top: 2rem;
+                align-self:start;
+             }
+    
+}
+
+@media only screen and (max-width: 768px){
+
+    .firstDiv button .buttonDesign1{
+        width: 15%;
+        
+         }
+         .firstDiv button .buttonDesign2{
+            width: 85%;
+           
+             }
+    
+}
+
+@media only screen and (max-width: 600px){
+
+    /* .firstDiv button .buttonDesign1{
+        width: 15%;
+        
+         }
+         .firstDiv button .buttonDesign2{
+            width: 85%;
+           
+             } */
+             body{
+        
+               height: 100%;}
+
+             main{
+               flex-direction: column;
+            }
+
+             .firstDiv{
+                width: 100%;
+                border-top-left-radius: 0rem;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                order: 2;
+            }
+            .secondDiv{width: 100%;
+                order: 1;
+                border-top-right-radius: 1rem;
+                border-top-left-radius: 1rem;
+                border-bottom-right-radius: 0rem;
+            }
+    
+}
+
+@media only screen and (max-width: 380px){
+
+
+
+             
+
+             .firstDiv{
+                padding: 3rem;
+            }
+            .secondDiv{width: 100%;
+                padding: 3rem;
+            }
+    
+}
